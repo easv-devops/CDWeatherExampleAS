@@ -9,7 +9,6 @@ steps:
       SONARSECRET:
         from_secret: SonarQubeSecret
     commands:
-      - exit 0
       - dotnet sonarscanner begin
           /k:"easv-devops_CDWeatherExampleAS_AY5mj14UEVvRW2O60EZ1"
           /d:sonar.host.url="http://sonar.setgo.dk:9000"  
