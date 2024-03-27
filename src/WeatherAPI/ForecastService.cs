@@ -20,7 +20,8 @@ public class ForecastService
                 (
                     DateTime.Now.AddDays(index),
                     Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
+                    summaries[Random.Shared.Next(summaries.Length)],
+                    (int)(Random.Shared.NextDouble() * 13)
                 ))
             .ToArray();
         
